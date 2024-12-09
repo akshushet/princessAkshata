@@ -4,6 +4,8 @@ import { Outlet } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 const AppLayout = () => {
+    console.log('jhdvbchvb');
+    
     return (
         <div>
             <Header />
