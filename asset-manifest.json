@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/princessAkshata/login/static/css/main.387947b5.css",
-    "main.js": "/princessAkshata/login/static/js/main.19fe040e.js",
+    "main.js": "/princessAkshata/login/static/js/main.44260971.js",
     "static/media/logo.svg": "/princessAkshata/login/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/princessAkshata/login/index.html",
     "main.387947b5.css.map": "/princessAkshata/login/static/css/main.387947b5.css.map",
-    "main.19fe040e.js.map": "/princessAkshata/login/static/js/main.19fe040e.js.map"
+    "main.44260971.js.map": "/princessAkshata/login/static/js/main.44260971.js.map"
   },
   "entrypoints": [
     "static/css/main.387947b5.css",
-    "static/js/main.19fe040e.js"
+    "static/js/main.44260971.js"
   ]
 }
