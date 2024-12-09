@@ -1,0 +1,30 @@
+// body{
+//     background-color: ;
+// }
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-7px);
+    }
+
+    50% {
+        transform: translateX(7px);
+    }
+
+    75% {
+        transform: translateX(-7px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+:root {
+    --toastify-color-success: #b2205d !important; /* Dark pink success */
+    --toastify-color-error: #b31d1d !important; /* Contrast red error */
+}
