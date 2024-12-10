@@ -61,9 +61,9 @@ const QRcodeScreen = () => {
     }, []);
 
     return (
-        <div style={{ padding: '20px', backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
+        <div style={{ padding: '20px', backgroundColor: '#f5f5f5', minHeight: '100vh', paddingTop: '20%' }}>
 
-            <Typography variant='h5' sx={{ textAlign: 'center', padding: '2%' }}>Codes for you to scan when you are feeling low or need some boost of motivation</Typography>
+            <Typography variant='h5' sx={{ textAlign: 'center', padding: '2%', paddingBottom: '8%' }}>Codes for you to scan when you are feeling low or need some boost of motivation</Typography>
             <Grid container spacing={2}>
                 {shuffledData.map((item, index) => (
                     <Grid

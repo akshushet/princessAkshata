@@ -27,7 +27,7 @@ const Header = () => {
     const menuItems = [
         { label: 'Awards', path: './awardsForYou' },
         { label: 'Cheer Up', path: './codesToScan' },
-        { label: 'Services', path: './servicesPage' },
+        { label: 'Story', path: './ourStory' },
         { label: 'Contact', path: './contactPage' },
     ];
 

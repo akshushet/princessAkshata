@@ -1,5 +1,6 @@
 import { Box, Grid, Typography, useMediaQuery, useTheme, Tooltip } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import Images from '../utils/images'; // Adjust to your actual image import path
 
 const awardsData = [
@@ -18,9 +19,24 @@ const awardsData = [
 const Awards = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const awardsRef = useRef([]);
+
+  useEffect(() => {
+    gsap.fromTo(
+      awardsRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 3,
+        stagger: 0.1,
+        ease: 'power3.out',
+      }
+    );
+  }, []);
 
   return (
-    <Box sx={{ padding: 2, backgroundColor: '#E6E6FA', minHeight: '100vh' }}>
+    <Box sx={{ padding: 2, backgroundColor: '#FFC1D6', minHeight: '100vh', paddingTop: isMobile ? '20%' : '7%' }}>
       <Box sx={{ textAlign: 'center', marginBottom: 3 }}>
         <Typography
           variant={isMobile ? 'h6' : 'h5'}
@@ -28,14 +44,14 @@ const Awards = () => {
             textAlign: 'center',
             marginBottom: 1,
             fontWeight: '500',
-            color: '#4B0082',
+            color: '#8C2A44',
           }}
         >
           Awards You Achieved In Your Life
         </Typography>
         <Typography
           variant="body1"
-          sx={{ textAlign: 'center', marginBottom: 2, color: '#4B0082' }}
+          sx={{ textAlign: 'center', marginBottom: 2, color: '#8C2A44' }}
         >
           No one might give it to you but you have earned them
         </Typography>
@@ -48,21 +64,19 @@ const Awards = () => {
             objectFit: 'cover',
             borderRadius: '8px',
             marginBottom: 3,
+            boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.2)',
           }}
         />
       </Box>
 
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-      >
+      <Grid container spacing={3} justifyContent="center">
         {awardsData.map((award, index) => (
           <Grid
             item
-            xs={6} // 2 awards per row on mobile
-            sm={4} // 3 awards per row on desktop
+            xs={6}
+            sm={4}
             key={index}
+            ref={(el) => (awardsRef.current[index] = el)}
           >
             <Tooltip title={award.tooltip} arrow>
               <Box
@@ -73,8 +87,13 @@ const Awards = () => {
                   width: '100%',
                   height: 'auto',
                   objectFit: 'cover',
-                  borderRadius: '8px',
-                  cursor: 'pointer', // Optional: indicate interactivity
+                  borderRadius: '12px',
+                  cursor: 'pointer',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                    boxShadow: '0px 6px 20px rgba(0, 0, 0, 0.3)',
+                  },
                 }}
               />
             </Tooltip>

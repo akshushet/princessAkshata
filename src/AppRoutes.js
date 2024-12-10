@@ -5,6 +5,7 @@ import Homepage from './screens/Homepage';
 import Login from './screens/Auth/Login';
 import QRcodeScreen from './screens/QRcodeScreen';
 import Awards from './screens/Awards';
+import Story from './screens/Story';
 
 const AppRoutes = () => {
 
@@ -15,6 +16,7 @@ const AppRoutes = () => {
                 <Route path="/homeLovePage" element={<Homepage />} />
                 <Route path="/codesToScan" element={<QRcodeScreen />} />
                 <Route path="/awardsForYou" element={<Awards />} />
+                <Route path="/ourStory" element={<Story />} />
             </Route>
         </Routes>
     );
