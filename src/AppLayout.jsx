@@ -8,7 +8,7 @@ const AppLayout = () => {
     
     return (
         <div>
-            {/* <Header /> */}
+            <Header />
             <Box component="main" sx={{ flexGrow: 2 }}>
                 {<Outlet />}
             </Box>
