@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/princessAkshata/static/css/main.759734b4.css",
-    "main.js": "/princessAkshata/static/js/main.1dcfccc8.js",
+    "main.js": "/princessAkshata/static/js/main.20956eec.js",
     "static/media/awardBanner.webp": "/princessAkshata/static/media/awardBanner.e5b7bcfcbd3125051e46.webp",
     "static/media/bestest.png": "/princessAkshata/static/media/bestest.b7279bf80bbb32359dd6.png",
     "static/media/improved.png": "/princessAkshata/static/media/improved.cc21e84b6cc4c339589c.png",
@@ -16,10 +16,10 @@
     "static/media/logo.svg": "/princessAkshata/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/princessAkshata/index.html",
     "main.759734b4.css.map": "/princessAkshata/static/css/main.759734b4.css.map",
-    "main.1dcfccc8.js.map": "/princessAkshata/static/js/main.1dcfccc8.js.map"
+    "main.20956eec.js.map": "/princessAkshata/static/js/main.20956eec.js.map"
   },
   "entrypoints": [
     "static/css/main.759734b4.css",
-    "static/js/main.1dcfccc8.js"
+    "static/js/main.20956eec.js"
   ]
 }
