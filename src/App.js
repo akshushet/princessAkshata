@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/princessAkshata">
       <AppRoutes />
       <ToastContainer theme="colored" hideProgressBar={true} limit={3} autoClose={1000} />  
     </BrowserRouter>

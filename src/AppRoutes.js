@@ -7,14 +7,12 @@ import Login from './screens/Auth/Login';
 const AppRoutes = () => {
 
     return (
-        <Router basename="/princessAkshata">
-            <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/" element={<AppLayout />}>
-                    <Route path="/homeLovePage" element={<Homepage />} />
-                </Route>
-            </Routes>
-        </Router>
+        <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/" element={<AppLayout />}>
+                <Route path="/homeLovePage" element={<Homepage />} />
+            </Route>
+        </Routes>
     );
 };
 

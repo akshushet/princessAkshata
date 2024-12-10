@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 const AppLayout = () => {
-    console.log('jhdvbchvb');
+    console.log('The testing that it is working');
     
     return (
         <div>
