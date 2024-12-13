@@ -61,7 +61,7 @@ const Login = () => {
         />
 
         <Typography sx={{ marginBottom: '10px', color: '#757575' }}>
-          You need to be a cute pie to enter
+          You need to be a cutie pie to enter
         </Typography>
         <Slider
           value={cuteness}

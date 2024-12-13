@@ -1,0 +1,84 @@
+/* ChapterOne.css */
+.chapter-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .chapter-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .chapter-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .chapter-title {
+    font-size: 2.5rem;
+    margin: 20px 0 10px;
+    color: #333;
+  }
+  
+  .chapter-subtitle {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  .chapter-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .content-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .text-section {
+    flex: 1;
+  }
+  
+  .content-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .content-image:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .content-section {
+      flex-direction: column;
+    }
+  
+    .content-section.reverse {
+      flex-direction: column;
+    }
+  }

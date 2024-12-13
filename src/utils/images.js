@@ -11,6 +11,9 @@ const Images = {
     improvedAward: require('../assets/images/improved.png'),
     talentedAward: require('../assets/images/talented.png'),
     understandingAward: require('../assets/images/understanding.png'),
+
+    // 1
+    wayanad: require('../assets/images/waynad.jpg'),
 }
 
 export default Images;
