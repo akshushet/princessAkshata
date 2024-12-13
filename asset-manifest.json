@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/princessAkshata/static/css/main.759734b4.css",
-    "main.js": "/princessAkshata/static/js/main.78baea73.js",
+    "main.css": "/princessAkshata/static/css/main.e14a7608.css",
+    "main.js": "/princessAkshata/static/js/main.cce96fa2.js",
     "static/media/awardBanner.webp": "/princessAkshata/static/media/awardBanner.e5b7bcfcbd3125051e46.webp",
     "static/media/bestest.png": "/princessAkshata/static/media/bestest.b7279bf80bbb32359dd6.png",
     "static/media/improved.png": "/princessAkshata/static/media/improved.cc21e84b6cc4c339589c.png",
@@ -13,13 +13,14 @@
     "static/media/talented.png": "/princessAkshata/static/media/talented.ce1a9de4659f668646a4.png",
     "static/media/bestemployee.png": "/princessAkshata/static/media/bestemployee.2db84afc5e307a7d4811.png",
     "static/media/hot.png": "/princessAkshata/static/media/hot.36467b873ca0dcfe4711.png",
+    "static/media/waynad.jpg": "/princessAkshata/static/media/waynad.418a60e7cf2d1ae29c95.jpg",
     "static/media/logo.svg": "/princessAkshata/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/princessAkshata/index.html",
-    "main.759734b4.css.map": "/princessAkshata/static/css/main.759734b4.css.map",
-    "main.78baea73.js.map": "/princessAkshata/static/js/main.78baea73.js.map"
+    "main.e14a7608.css.map": "/princessAkshata/static/css/main.e14a7608.css.map",
+    "main.cce96fa2.js.map": "/princessAkshata/static/js/main.cce96fa2.js.map"
   },
   "entrypoints": [
-    "static/css/main.759734b4.css",
-    "static/js/main.78baea73.js"
+    "static/css/main.e14a7608.css",
+    "static/js/main.cce96fa2.js"
   ]
 }
