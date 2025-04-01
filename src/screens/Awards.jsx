@@ -9,6 +9,7 @@ const awardsData = [
   { image: Images.charmingAward, tooltip: "This is to tell you how charming and sweet person you are." },
   { image: Images.funnyAward, tooltip: "This is to tell you that you are funny in some way but unfunny but you think you are funny but you are not but sometimes you are (this goes without saying of course after me) because you learnt from me." },
   { image: Images.bestestAward, tooltip: "This is literally to tell you that you are the best can't say anything more that's it the best." },
+  { image: Images.bestMommy, tooltip: "This is literally to tell you that you are the best mommy in the universe who loves her baby the most and cares for the baby though yu are the strict mommy but never fail to love the baby." },
   { image: Images.hardworkingAward, tooltip: "This is to tell you that you are actually hardworking and a dedicated person trying very hard to make things work." },
   { image: Images.hotAward, tooltip: "This is for you to tell you are the hottest like a fire can't handle the heat." },
   { image: Images.improvedAward, tooltip: "This is to acknowledge and appreciate you that you have actually started working on yourself and improved a lot." },
@@ -36,7 +37,7 @@ const Awards = () => {
   }, []);
 
   return (
-    <Box sx={{ padding: 2, backgroundColor: '#FFC1D6', minHeight: '100vh', paddingTop: isMobile ? '20%' : '7%' }}>
+    <Box sx={{ padding: 2, backgroundColor: '#FFC1D6', minHeight: '100vh', paddingTop: isMobile ? '20%' : '7%', paddingBottom: '20%' }}>
       <Box sx={{ textAlign: 'center', marginBottom: 3 }}>
         <Typography
           variant={isMobile ? 'h6' : 'h5'}

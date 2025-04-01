@@ -6,6 +6,9 @@ import Login from './screens/Auth/Login';
 import QRcodeScreen from './screens/QRcodeScreen';
 import Awards from './screens/Awards';
 import Story from './screens/Story';
+import Fireworks from './screens/Fireworks';
+import Languages from './screens/Languages';
+import Poems from './screens/Poems';
 
 const AppRoutes = () => {
 
@@ -17,6 +20,9 @@ const AppRoutes = () => {
                 <Route path="/codesToScan" element={<QRcodeScreen />} />
                 <Route path="/awardsForYou" element={<Awards />} />
                 <Route path="/ourStory" element={<Story />} />
+                <Route path="/enjoyMoment" element={<Fireworks />} />
+                <Route path="/expressingLove" element={<Languages /> } />
+                <Route path="/heartfeltMessages" element={<Poems /> } />
             </Route>
         </Routes>
     );

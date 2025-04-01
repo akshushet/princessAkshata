@@ -28,7 +28,7 @@ const Header = () => {
         { label: 'Awards', path: './awardsForYou' },
         { label: 'Cheer Up', path: './codesToScan' },
         { label: 'Story', path: './ourStory' },
-        { label: 'Contact', path: './contactPage' },
+        { label: 'Contact', path: './enjoyMoment' },
     ];
 
     const toggleDrawer = (open) => () => {

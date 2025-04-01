@@ -1,0 +1,169 @@
+.poems-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: #000;
+  
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      list-style-type: none;
+  
+      .item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3) inset;
+        opacity: 0;
+        transition: all 0.75s ease-in-out;
+  
+        &.active {
+          width: 100%;
+          height: 100%;
+          border-radius: 0;
+          box-shadow: none;
+          opacity: 1;
+          z-index: 3;
+        }
+  
+        &.next,
+        &.prev {
+          width: 160px;
+          height: 270px;
+          opacity: 0.7;
+          z-index: 2;
+        }
+  
+        &.next {
+          transform: translate(50%, -50%);
+        }
+  
+        &.prev {
+          transform: translate(-150%, -50%);
+        }
+  
+        &.hidden {
+          opacity: 0;
+          z-index: 1;
+        }
+  
+        .content {
+          width: 350px;
+          position: absolute;
+          top: 5%;
+          left: 1rem;
+          font: 400 0.85rem Helvetica, sans-serif;
+          color: white;
+          text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+  
+          .title {
+            font-family: 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+          }
+  
+          .description {
+            line-height: 1.7;
+            margin: 1rem 0 1.5rem;
+            font-size: 1.5rem;
+          }
+        }
+  
+        &.active .content {
+          opacity: 1;
+          transition-delay: 0.3s;
+        }
+      }
+    }
+  
+    .nav {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      display: flex;
+      gap: 0.5rem;
+      user-select: none;
+  
+      .btn {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 0.7);
+        border: 2px solid rgba(0, 0, 0, 0.6);
+        padding: 0.75rem;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  
+    /* Responsive Design */
+    @media (min-width: 650px) and (max-width: 900px) {
+      .slider {
+        .item {
+          width: 160px;
+          height: 270px;
+  
+          &.next {
+            transform: translate(50%, -50%);
+          }
+  
+          &.prev {
+            transform: translate(-170%, -50%);
+          }
+        }
+  
+        .item.active .content {
+          font-size: 1.2rem;
+        }
+  
+        .item .description {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  
+    @media (max-width: 650px) {
+      .slider {
+        .item {
+          width: 180px;
+          height: 220px;
+  
+          &.next {
+            transform: translate(50%, -50%);
+          }
+  
+          &.prev {
+            transform: translate(-140%, -50%);
+          }
+        }
+  
+        .item.active .content {
+          font-size: 1rem;
+        }
+  
+        .item .description {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  
